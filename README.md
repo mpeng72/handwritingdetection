@@ -14,7 +14,13 @@ This project also contains models generated from the MNIST dataset and a A-Z upp
 [Tensorflow](https://www.tensorflow.org/api_docs/python/tf) is an open-source library that supports the development of neural networks and large-scale machine learning
 
 # Usage
-Install requirements with  '''pip install -r requirements.txt'''
+Install requirements with  
+'''
+pip install -r requirements.txt
+'''
 
-To run the code, type '''python main.py'''
+To run the code, type 
+'''
+python main.py
+'''
 
