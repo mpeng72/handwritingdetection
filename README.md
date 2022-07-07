@@ -16,14 +16,14 @@ This project also contains models generated from the MNIST dataset and a A-Z upp
 ## Installation
 Use the file requirements.txt to install the necessary packages
 
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
 
 ## Usage
 To run the code, type 
 
-'''bash
+```python
 python main.py
-'''
+```
 
