@@ -4,7 +4,7 @@ Handwritten text recognition model built using tensorflow and the EMNIST dataset
 
 
 <a href="https://github.com/mpeng72/handwritingdetection">
-    <img src="/img/img_0.png" alt="Logo" width="80" height="80">
+    <img src="/img/img_0.png" alt="Logo" width="300" height="300">
   </a>
 
 This project also contains models generated from the MNIST dataset and a A-Z uppercase letter dataset which can be found [here](https://www.kaggle.com/datasets/sachinpatel21/az-handwritten-alphabets-in-csv-format)
@@ -14,6 +14,7 @@ This project also contains models generated from the MNIST dataset and a A-Z upp
 [Tensorflow](https://www.tensorflow.org/api_docs/python/tf) is an open-source library that supports the development of neural networks and large-scale machine learning
 
 # Usage
-Install requirements with ~pip install -r requirements.txt
-To run the code, type ~python main.py
+Install requirements with  '''pip install -r requirements.txt'''
+
+To run the code, type '''python main.py'''
 
