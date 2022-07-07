@@ -5,6 +5,7 @@ from keras import models
 from keras import layers
 from extra_keras_datasets import emnist
 
+
 #define training constants
 num_classes = 62
 epochs = 10
@@ -18,8 +19,8 @@ model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 model.add(layers.MaxPooling2D(pool_size=(2, 2)))
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 model.add(layers.Flatten())
+model.add(layers.Dense(256, activation='relu'))
 model.add(layers.Dense(512, activation='relu'))
-model.add(layers.Dropout(0.5))
 model.add(layers.Dense(num_classes, activation='softmax'))
 model.summary()
 
@@ -36,7 +37,7 @@ test_images = test_images.astype('float32')/255
 train_labels = keras.utils.to_categorical(train_labels, num_classes)
 test_labels = keras.utils.to_categorical(test_labels, num_classes)
 
-model.compile(loss=keras.losses.categorical_crossentropy,optimizer=keras.optimizers.Adamax(learning_rate = 0.002, beta_1 = 0.9, beta_2 = 0.999, epsilon = None, decay = 0.0),metrics=['accuracy'])
+model.compile(loss=keras.losses.categorical_crossentropy,optimizer=keras.optimizers.Adam(learning_rate = 0.001),metrics=['accuracy'])
 model.fit(train_images, train_labels, epochs = epochs, batch_size=batch_size)
 
 model.save('models/emnist.h5')
