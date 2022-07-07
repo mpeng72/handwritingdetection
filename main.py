@@ -81,12 +81,11 @@ class App(tk.Tk):
 
             pred_char = model.predict([character])[0]
             final_pred_char = np.argmax(pred_char)
-            print(final_pred_char)
             if(final_pred_char>=10):
                 final_pred_char = word_dict[final_pred_char]
 
 
-            data = str(final_pred_char) + ' ' + str(int(max(pred_char) * 100)) + '% '
+            data = str(final_pred_char)
             self.result+=data
 
         self.label.configure(text="You wrote: " + self.result, font = 15)
