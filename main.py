@@ -31,7 +31,7 @@ class App(tk.Tk):
 
         self.title("Writing Space")
         self.canvas = tk.Canvas(self, width = 1000, height = 1000, bg = "white", cursor="cross")
-        self.label = tk.Label(self, text = "Result", font = 48)
+        self.label = tk.Label(self, text = "Result", font = ("Arial",25))
         self.button_clear = tk.Button(self, text = "Clear Writing Space", command = self.clear_all, width = 20, font = (tkFont.Font(size=15)))
         self.button_clear2 = tk.Button(self, text="Convert to text" , command = self.Writing_To_Text, width = 20, font = (tkFont.Font(size=15)))
 
@@ -88,7 +88,7 @@ class App(tk.Tk):
             data = str(final_pred_char)
             self.result+=data
 
-        self.label.configure(text="You wrote: " + self.result, font = 15)
+        self.label.configure(text="You wrote: " + self.result, font = ("Arial",25))
         
 app = App()
 mainloop()
