@@ -3,7 +3,7 @@
 Handwritten text recognition model built using tensorflow and the EMNIST dataset that can be found [here](https://www.nist.gov/itl/products-and-services/emnist-dataset). The EMNIST dataset contains 62 classes containing the digits 0-9 and A-Z characters in both upper and lowercase. A model to detect handwriting was generated from the 'byclass' type of this dataset, which contains 814,255 images, using a Convolutional Neural Network. User input is exported from a tkinter canvas where it is then split into characters from left to right and analyzed by our model.
 
 <a href="https://github.com/mpeng72/handwritingdetection">
-    <img src="/example.png" alt="Logo" width="500" height="400">
+    <img src="/example.png" alt="Logo" width="400" height="400">
   </a>
 
 This project also contains models generated from the MNIST digit dataset and a A-Z uppercase letter dataset which can be found [here](https://www.kaggle.com/datasets/sachinpatel21/az-handwritten-alphabets-in-csv-format)
